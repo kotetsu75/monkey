@@ -123,7 +123,7 @@ func TestIdentifierExpression(t *testing.T) {
 	}
 	stmt, ok := program.Statements[0].(*ast.ExpressionStatement)
 	if !ok {
-		t.Fatalf("program.Statement[0] is not ast.ExpressionStatement. got=%T", program.Statements[0])
+		t.Fatalf("program.Statements[0] is not ast.ExpressionStatement. got=%T", program.Statements[0])
 	}
 
 	ident, ok := stmt.Expression.(*ast.Identifier)
